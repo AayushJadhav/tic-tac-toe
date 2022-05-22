@@ -1,0 +1,156 @@
+:root {
+	--bgColor: #eeeeee;
+}
+
+* {
+	margin: 0;
+	font-family: monospace;
+	padding: 0;
+}
+
+#start-game {
+	width: 100vw;
+	height: 100vh;
+	display: flexbox;
+	text-align: center;
+}
+
+#h1-1, #btn-1 {
+	position: relative;
+}
+
+#h1-1 {
+	font-size: 80px;
+	top: 30%;
+}
+
+#btn-1 {
+	width: 100px;
+	height: 40px;
+	font-size: x-large;
+	background-color: black;
+	color: var(--bgColor);
+	top: 40%;
+}
+
+#btn-1:hover, #btn-2:hover {
+	background-color: var(--bgColor);
+	color: black;
+}
+
+#inputs {
+	align-self: center;
+	position: relative;
+	top: 50%;
+}
+
+input {
+	width: 40px;
+	height: 40px;
+}
+
+input:checked {
+	cursor: not-allowed;
+}
+
+label {
+	font-size: 40px;
+}
+
+#main-game {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	display: block;
+}
+
+#game-board {
+	position: relative;
+	top: 15%;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	border: 2px solid black;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	font-size: 60px;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+	border-top: none;
+}
+
+.cell:first-child,
+.cell:nth-child(4),
+.cell:nth-child(7) {
+	border-left: none;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:last-child {
+	border-right: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:last-child {
+	border-bottom: none;
+}
+
+.cell:hover {
+	background-color: black;
+	color: var(--bgColor);
+}
+
+#turnBoard {
+	position: absolute;
+	top: 430px;
+	left: 600px;
+	font-size: 40px;
+	width: 120px;
+}
+
+#turn {
+	position: absolute;
+	width: 40px;
+	top: 430px;
+	left: 720px;
+	font-size: 40px;
+}
+
+#end-game {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	display: block;
+}
+
+#result {
+	position: relative;
+	top: 25%;
+	color: black;
+	font-size: 20vh;
+}
+
+#btn-2 {
+	position: relative;
+	width: 120px;
+	height: 60px;
+	font-size: xx-large;
+	background-color: black;
+	color: var(--bgColor);
+	top: 30%;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="start-game">
+		<h1 id="h1-1">TIC-TAC-TOE</h1>
+		<button id="btn-1" onclick="startGame()">Start</button>
+		<!-- <div id="inputs">
+			<label for="x-checkbox">X:
+				<input id="x-checkbox" type="checkbox" />
+			</label>
+			<label for="o-checkbox">O:
+				<input id="o-checkbox" type="checkbox" />
+			</label>
+		</div> -->
+	</div>
+	<div id="main-game">
+		<div id="game-board">
+			<div class="cell" id="0"></div>
+			<div class="cell" id="1"></div>
+			<div class="cell" id="2"></div>
+			<div class="cell" id="3"></div>
+			<div class="cell" id="4"></div>
+			<div class="cell" id="5"></div>
+			<div class="cell" id="6"></div>
+			<div class="cell" id="7"></div>
+			<div class="cell" id="8"></div>
+		</div>
+        <h1 id="turnBoard">Turn: 
+			<h1 id="turn">X</h1>
+        </h1>
+	</div>
+	<div id="end-game">
+        	<h1 id="result"></h1>
+        	<button id="btn-2" onclick="startGame()">REPLAY</button>
+    </div>
+	<script type="text/javascript" src="sketch.js"></script>
+</body>
+</html>
