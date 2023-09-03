@@ -134,6 +134,8 @@ label {
 	top: 430px;
 	left: 720px;
 	font-size: 40px;
+	color: "white";
+	background-color: "black";
 }
 
 #end-game {
