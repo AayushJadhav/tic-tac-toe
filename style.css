@@ -7,6 +7,11 @@
 	--bgColor: #eeeeee;
 }
 
+::selection {
+	color: "white";
+	background-color: "black";
+}
+
 * {
 	margin: 0;
 	font-family: hack;
